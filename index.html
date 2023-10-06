@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="./styles/todo.css">
+  <script defer src="./scripts/todo.js"></script>
 </head>
 <body>
-    <h1>Hola Mundo</h1>
+  <header class="header">
+    <div class="container-wrapper">
+      <h1><a href='./'>Lista de tareas</a></h1>
+    </div>
+  </header>
+  <main>
+    <div class="container-wrapper main-content">
+      <form class="task-form">
+        <fieldset>
+          <legend>Formulario</legend>
+          <label for="taskInput">Escribe tu tarea</label>
+          <input type="text" id="taskInput" placeholder="Dime cosas" class="task-box">
+          <button disabled="disabled" type="button" class="button">Enviar</button>
+        </fieldset>
+      </form>
+      <section class="tasks">
+        <ul class="task-list">
+
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container-wrapper">
+      <p>&copy; Dani Cabal</p>
+    </div>
+  </footer>
 </body>
 </html>

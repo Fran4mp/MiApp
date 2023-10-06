@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  background: #ccc;
+}
+
+.container-wrapper {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 3rem
+}
+
+.header {
+  background: #504118;
+}
+
+.header a{
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background: #f2cdb0;
+  text-align: right;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.task-form {
+  width: 50%;
+  margin: auto;
+  background: #aaa;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+}
+
+.task-form fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.task-form legend {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem
+}
+
+.task-box {
+  font-size: 1rem;
+  padding: .2rem .5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.task-list {
+  width: 50%;
+  margin: 3rem auto;
+}
+
+.task-list li {
+  cursor: pointer;
+}
+
+.task-list .done {
+  text-decoration: line-through;
+}
+
+.button {
+  font-size: 1rem;
+  padding: .5rem;
+  background-color: darkred;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: .5;
+  cursor: default;
+}
